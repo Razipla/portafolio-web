@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  @apply bg-white text-black; /* texto plano negro */
+}
+
+.text-field {
+  @apply bg-white text-[#273c75] border border-[#7f8fa6];
+}
+
+/* Tipografia */
+.headline-1 {
+  @apply max-w-max;
+  background: -webkit-linear-gradient(0deg, #273c75, #7f8fa6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline-1 {
+  @apply text-5xl leading-tight font-semibold lg:text-[55px] lg:leading-[1];
+  background: -webkit-linear-gradient(0deg, #273c75, #7f8fa6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.headline-2 {
+  @apply text-3xl lg:text-4xl lg:leading-tight font-semibold text-[#273c75];
+}
+
+.title-1 {
+  @apply text-[22px] font-normal text-[color:#273c75];
+}
+
+/* Utilities */
+.material-symbols-rounded {
+  @apply overflow-hidden;
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.25);
+  }
+  50% {
+    transform: translateY(-12px);
+    box-shadow: 0 25px 35px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+.animate-float {
+  animation: floatImage 3.5s ease-in-out infinite;
+}
+.container {
+  @apply px-4 mx-auto lg:px-8 xl:max-w-6xl;
+}
+
+.img-box {
+  @apply bg-gray-100 overflow-hidden;
+}
+
+.img-cover {
+  @apply w-full h-full object-cover;
+}
+
+.section {
+  @apply pt-28 pb-20 lg:pt-36 lg:pb-28;
+}
+
+.reveal-up {
+  @apply translate-y-20 opacity-0;
+}
+
+.scroll-center-wrap {
+  @apply flex items-center gap-5 w-max mx-auto px-8;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none; 
+}
+.scrollbar-hide::-webkit-scrollbar {
+  display: none; 
+}
+
+/* Menu btn */
+.menu-btn {
+  @apply w-10 h-10 grid place-items-center bg-gray-200 rounded-xl ring-inset ring-1 ring-gray-300 backdrop-blur-2xl hover:bg-yellow-300 transition-[transform,background-color] active:scale-95;
+}
+
+/* Navbar */
+.navbar {
+  @apply absolute top-full mt-2 right-0 w-fit p-2 bg-white rounded-2xl ring-inset ring-1 ring-gray-200 scale-90 isolate blur-sm opacity-0 invisible transition-[opacity,transform,filter] md:static md:flex md:flex-wrap md:justify-center md:items-center md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 backdrop-blur-2xl;
+}
+
+.navbar.active {
+  @apply opacity-100 scale-100 blur-0 visible;
+}
+
+.nav-link {
+  @apply grid items-center h-9 px-4 text-sm font-medium tracking-wide text-gray-500 hover:text-[#273c75] transition-colors min-w-[80px] text-center;
+}
+
+.nav-link.active {
+  @apply text-[#273c75] duration-500;
+}
+
+.navbar .active-box {
+  @apply absolute top-2 left-2 right-2 h-9 bg-[#fbc531] rounded-lg -z-10 transition-[top,left,width,height] duration-500;
+}
+/* Botones */
+.btn {
+  @apply max-w-max h-9 flex items-center gap-2 px-4 rounded-xl font-medium text-sm ring-1 ring-inset transition-[background-color];
+}
+
+.btn-secondary {
+  @apply bg-[#273c75] text-white hover:bg-[#1b2e60];
+}
+
+.btn .material-symbols-rounded {
+  @apply text-[18px];
+}
+
+.btn:has(.material-symbols-rounded) {
+  @apply pr-3;
+}
+
+.btn-primary {
+  @apply h-11 bg-[#fbc531] text-[#273c75] hover:bg-yellow-400 active:bg-yellow-500;
+}
+
+.btn-outline {
+  @apply h-11 bg-white border border-[#7f8fa6] text-[#273c75] hover:bg-[#7f8fa6] hover:text-white;
+}
+
+/* Inputs */
+.label {
+  @apply block text-zinc-700 text-sm font-normal mb-2;
+}
+
+.text-field {
+  @apply block outline-none w-full px-3 py-3 text-sm bg-white rounded-xl border border-[#7f8fa6] text-zinc-800 focus:ring-[#273c75] focus:ring-2;
+}
+
+.text-field::placeholder {
+  @apply text-zinc-400;
+}

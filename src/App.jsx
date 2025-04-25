@@ -27,13 +27,13 @@ const App = () => {
     useGSAP(() => {
         const elements = gsap.utils.toArray('.reveal-up');
         elements.forEach((element) => {
-          gsap.set(element, { y: 50, opacity: 0 }); // Estado inicial
+          gsap.set(element, { y: 50, opacity: 0 }); 
           gsap.to(element, {
             scrollTrigger: {
               trigger: element,
               start: '-200 bottom',
               scrub: true,
-              // markers: true, // dejalo activado si estás depurando
+              // markers: true, 
             },
             y: 0,
             opacity: 1,

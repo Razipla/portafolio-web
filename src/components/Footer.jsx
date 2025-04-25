@@ -38,7 +38,7 @@ const Footer = () => {
               rel="noreferrer"
               className="inline-flex items-center gap-2 text-[#25D366] font-semibold text-lg reveal-up hover:underline"
             >
-              <img src="/images/whatsapp.png" alt="WhatsApp" className="w-6 h-6" />
+              <img src={`${import.meta.env.BASE_URL}images/whatsapp.png`} alt="WhatsApp" className="w-6 h-6" />
               {t.footer.start}
             </a>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
     
         <div className="flex flex-col md:flex-row items-center justify-between pt-10 mt-10 border-t border-zinc-200 text-sm text-zinc-600 gap-3">
           <a href="/" className="logo reveal-up">
-            <img src="/images/logo.png" alt="logo" width={70} height={70} />
+            <img src={`${import.meta.env.BASE_URL}images/logo.png`} alt="logo" width={70} height={70} />
           </a>
           <p className="reveal-up">
             &copy; 2025 <span className="text-[#273c75] font-semibold">Allan Alpízar</span> — {t.footer.copyright}

@@ -9,29 +9,24 @@ import ProjectCard from "./ProjectCard";
 
 const works = [
   {
-    imgSrc: "/images/project-1.png",
+    imgSrc: `${import.meta.env.BASE_URL}images/project-1.png`,
     title: "Questify",
     tags: ["Web-design", "Development", "API"],
     projectLink: "https://github.com/Razipla/Questify_api",
   },
   {
-    imgSrc: "/images/project-3.png",
+    imgSrc: `${import.meta.env.BASE_URL}images/project-3.png`,
     title: "Super EL Pueblo website",
     tags: ["Web-design", "Development"],
     projectLink: "https://github.com/Razipla/Comunication",
   },
   {
-    imgSrc: "/images/project-2.png",
+    imgSrc: `${import.meta.env.BASE_URL}images/project-2.png`,
     title: "Supernova website",
     tags: ["Web-design", "Development"],
     projectLink: "https://github.com/Razipla/proyecto_DIWEB",
   },
-  {
-    imgSrc: "/images/project-1.jpg",
-    title: "Full stack music app",
-    tags: ["API", "MVC", "Development"],
-    projectLink: "https://musify-5al0.onrender.com/",
-  },
+
 
 ];
 

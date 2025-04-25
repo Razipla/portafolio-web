@@ -58,7 +58,7 @@ const About = () => {
             ))}
 
             <img
-              src="/images/logo.png"
+              src={`${import.meta.env.BASE_URL}images/logo.png`}
               alt="Logo"
               width={90}
               className="ml-auto md:w-[70px] md:h-[70px]"

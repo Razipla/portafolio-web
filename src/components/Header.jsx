@@ -20,7 +20,7 @@ const Header = () => {
         <h1>
           <a href="/" className="logo">
             <img
-              src="/images/logotipo.png"
+              src={`${import.meta.env.BASE_URL}images/logotipo.png`}
               width={100}
               height={100}
               alt="logo"

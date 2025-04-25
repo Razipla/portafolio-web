@@ -149,3 +149,19 @@ body {
 .text-field::placeholder {
   @apply text-zinc-400;
 }
+
+@keyframes gentleFloat {
+  0%, 100% {
+    transform: translateY(0px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+  }
+}
+
+.animate-gentle-float {
+  animation: gentleFloat 6s ease-in-out infinite;
+}
+

@@ -16,7 +16,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 const skillItem = [
   {
-    imgSrc: "/images/adobexd.png",
+    imgSrc: `${import.meta.env.BASE_URL}images/adobexd.png`,
     label: "AdobeXD",
     desc: {
       es: "Diseño prototipos para organizar visualmente antes de programar.",
@@ -24,7 +24,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/css3.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/css3.svg`,
     label: "CSS",
     desc: {
       es: "Aplico estilos para dar vida y estructura visual al sitio.",
@@ -32,7 +32,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/javascript.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/javascript.svg`,
     label: "JavaScript",
     desc: {
       es: "Doy interactividad al sitio, desde animaciones hasta formularios.",
@@ -40,7 +40,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/nodejs.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/nodejs.svg`,
     label: "NodeJS",
     desc: {
       es: "Creo el servidor y toda la lógica del backend.",
@@ -48,7 +48,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/expressjs.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/expressjs.svg`,
     label: "ExpressJS",
     desc: {
       es: "Organizo las rutas y peticiones del backend de forma sencilla.",
@@ -56,7 +56,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/mongodb.svg",
+    imgSrc:`${import.meta.env.BASE_URL}images/mongodb.svg`,
     label: "MongoDB",
     desc: {
       es: "Guardo y consulto datos como usuarios y formularios.",
@@ -64,7 +64,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/react.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/react.svg`,
     label: "React",
     desc: {
       es: "Creo componentes reutilizables para construir interfaces dinámicas.",
@@ -72,7 +72,7 @@ const skillItem = [
     },
   },
   {
-    imgSrc: "/images/tailwindcss.svg",
+    imgSrc: `${import.meta.env.BASE_URL}images/tailwindcss.svg`,
     label: "TailwindCSS",
     desc: {
       es: "Aplico estilos de forma rápida con clases utilitarias.",
